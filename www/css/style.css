@@ -1,0 +1,44 @@
+/* CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h5 {
+  color: red;
+  text-align: center;
+}
+
+h5#dica {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}
+
+ol {
+  border-bottom: solid red 0.5px;
+}
+
+section {
+  padding-top: 5%;
+}
+
+.botao {
+  padding-bottom: 5%;
+}
+
+.container {
+  display: flex;
+	min-height: 100%;
+	flex-direction: column;
+}
+
+.total {
+  margin-top: auto;
+}

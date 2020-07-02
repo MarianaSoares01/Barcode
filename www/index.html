@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/script.js"></script>
+  <script src="components/cordova.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+</head>
+<body style='background: mistyrose;'>
+
+  <section class="container">
+    <div class="row botao">
+      <div class="col-sm">
+        <button class='btn btn-danger btn-block' id='codigo'>Adicionar produto</button>
+      </div>
+    </div>
+
+    <div class="row lista">
+      <div class="col-sm">
+        <h5>Preços dos produtos adicionados:</h5>
+        <div id='lista_compras'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row total">
+      <div class="col-sm">
+        <div class="alert alert-danger text-center" role="alert">
+          Valor total R$:  
+          <div id='valor_total'></div>
+        </div>
+      </div>
+    </div>
+    <h5 id='dica'>
+      <b>Dica:</b> Para eliminar um valor, clique em cima dele; O valor clicado será automaticamente subtraído do valor total. 
+      <hr>
+      Por favor, ao gerar o QR_CODE ou CODE_39, use apenas números (inteiros ou decimais; até duas casas após a vírgula) para que o aplicativo funcione corretamente. 
+      <br>
+      Ex.: 2 <b> ou </b> 12 <b> ou </b> 12.99
+    </h5>
+  </section>
+
+</body>
+</html>
